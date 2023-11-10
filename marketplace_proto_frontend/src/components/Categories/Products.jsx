@@ -1,7 +1,7 @@
 import React from 'react';
 import imgFour from '../Images/productFour.png';
 import imgThree from '../Images/productThree.png';
-import styles from "./Categories.module.css";
+import styles from "./Products.module.css";
 function Categories() {
 
     const products = [
@@ -40,22 +40,32 @@ function Categories() {
 
         }
     ]
-  return (
-    <div className={styles.productCards}>
-        {
-            products && products.map(product => {
-                return (
-                    <div className={styles.productCard} key={product.id}>
-                        <img src={product.image} alt={product.name} />
-                        <h3>{product.name}</h3>
-                        <p>{product.price}</p>
-                    </div>
-                )
-            })
-        }
-      
-    </div>
-  );
+    return (
+        <>
+            <div className={styles.marketTitle}>
+                <h2>SHOP</h2>
+            </div>
+            <div className={styles.productCards}>
+
+                {
+                    products && products.map(product => {
+                        return (
+                            <div className={styles.productCard} key={product.id}>
+                                <img src={product.image} alt={product.name} />
+                                <div className={styles.productDsc}>
+                                    <h3>{product.name}</h3>
+                                    <p>{product.price}</p>
+                                </div>
+
+                            </div>
+                        )
+                    })
+                }
+
+            </div>
+        </>
+
+    );
 }
 
 export default Categories;

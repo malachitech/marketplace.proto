@@ -1,0 +1,44 @@
+.marketTitle{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(25, 70, 138);
+}
+.productCards{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    margin: 30px 0;
+    width: 100%;
+
+
+}
+
+.productCards .productCard{
+    width: 23%;
+    
+}
+
+
+.productCards .productCard .productDsc{
+    font-weight: 800;
+    font-size: 16px;
+    background-color:rgba(25, 70, 138, 0.075);
+    padding:7%;
+  
+}
+.productCards .productCard p{
+    color: rgb(25, 70, 138);
+}
+.productCards .productCard h3{
+    text-transform: capitalize;
+    color: rgb(202, 25, 123);
+}
+
+.image{
+    width: 100%;
+    
+    
+}
